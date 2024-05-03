@@ -1,0 +1,56 @@
+html,body {
+    min-height: 150vh;
+    min-width: 150vh;
+    background-image: url("beautiful-look-flowers-sky.jpg"); /* Specify the path to your image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background */
+    background-repeat: no-repeat; /* Prevent background from repeating */
+}
+p{
+    text-align: left;
+    font-size: 20px;
+}
+form{
+    background-color:rgba(202, 35, 35, 0.5); /* Red color with 50% opacity */ ;
+    width: 200px;
+    padding: 20px;
+    border: 1px solid black; /* Add border to the form */
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 auto;
+
+}
+h1{
+    text-align: center;
+    font-size: 40;
+    color: black;
+}
+h2{
+    text-align: center;
+    color: black;
+    border: 1px white;
+    border-radius: 2px;
+}
+h3{
+    color: bisque;
+}
+  /* Style for the checkbox */
+  
+button{
+        border: 0;
+        line-height: 2.5;
+        padding: 0 20px;
+        font-size: 1rem;
+        text-align: center;
+        color: #fff;
+        text-shadow: 1px 1px 1px #000;
+        border-radius: 10px;
+        background-color: rgba(220, 0, 0, 1);
+        background-image: linear-gradient(
+          to top left,
+          rgba(0, 0, 0, 0.2),
+          rgba(0, 0, 0, 0.2) 30%,
+          rgba(0, 0, 0, 0)
+        )
+       
+}

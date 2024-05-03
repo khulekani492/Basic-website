@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hive Mind</title>
+    <style>
+        /* Center the login form */
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            background: linear-gradient(yellow 40%, black 21%);
+        }
+
+        .form-container {
+            position: absolute;
+            top: 40px;
+            left: 30px;
+            width: 400px;
+            padding: 30px;
+            border: 1px solid yellow;
+            border-radius: 7px;
+            background-color: rgb(188, 188, 44);
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="date"],
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: black;
+            color: navy;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="font-size: 100px; color: black; text-align: center">Hive Mind</h1>
+   
+    <div class="form-container">
+        <h4 style="font-size: 100px; color: yellow; text-align: center">Hive Mind</h4>
+        <form name="myform" action="create.html" method="GET">
+            <label for="user_name">Enter your name:</label>
+            <input type="text" id="user_name" name="user_name" required>
+            <label for="Password">Enter your Password:</label>
+            <input type="password" id="Password" name="Password" required>
+            <label for="DateOfBirth">Enter your Date of Birth:</label>
+            <input type="date" id="DateOfBirth" name="DateOfBirth" required>
+            <button type="submit">Create</button>
+        </form>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+
+</html>

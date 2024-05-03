@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Display Musicpage</title>
+    
+    <meta name="author" content="Khulekani Zondo">
+    <meta name="description" content="Hivemind music library.">
+    <script src='homee.js' defer></script>
+    <style>
+     body {
+            background: linear-gradient(yellow 40%,black 40%);
+            height: 120vh;
+            font-family: sans-serif;
+        }
+    .container {
+        margin-top: 20px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-wrap: wrap
+        } 
+    
+    img {
+        margin-top:20px ;
+        width: 400px; /* Set the width of the image */
+        height: auto; /* Maintain the aspect ratio */
+        margin-right: 40px; /* Add space between the image and audio */
+    }
+  
+    .audio-container {
+        position: relative;
+        left: 1%;
+        display: flex;
+        flex-direction: column;
+        width: 400px; 
+        height: 60px;
+        margin-top: 10px; /* Adjust vertical position */
+        margin-left: 20px;
+        color: orange;
+        
+    } 
+
+    .options {
+        position: absolute;
+        top: 50%;
+        left: 75%;
+        color: orange;
+        
+    }
+   
+    .welcmeContainr{ 
+      display: flex;
+      flex-direction: column;
+      position:relative;
+    } 
+        .song-name {
+            margin-bottom: 10px;
+            color:pink;
+
+        }
+        .playlist {
+            display: flex;
+            gap :0.630%
+        
+            
+        }
+        .h2{
+            color: yellow;
+        }
+        a{
+            flex: 1;
+            text-decoration: none;
+            outline-color: transparent;
+            text-align: center;
+            line-height: 1;
+            color: black;
+         }
+        a:hover{
+            color:yellow
+        }
+        a:link,
+        a:visited,
+        a:focus {
+       
+        margin-top: 20px;
+        background: palegoldenrod;
+        color: black;
+        display: inline-block; /* Change the display to inline-block */
+        padding: 10px 10px; /* Add padding to the links */
+        text-decoration: none; /* Remove default underline */
+        }
+
+       a:hover {
+       background: orange;
+       }
+
+       a:active {
+      background: darkred;
+      color: white;
+      }
+     audio{
+    margin-right: 20px;
+     }
+   .sec_img{
+    position: relative;
+    left: 200%;
+    margin-top: 15px;
+ }
+</style>
+</head>
+ <body>
+    <h1 style="font-size: 100px; color:black; text-align: center;"> Hive MiND </h1>
+    <div style="display: flex; align-items: center;">
+        <h1>Welcome </h1>
+    </div>
+
+    <div id="user_name" style="color: orange; font-size: 24px; text-align: justify; margin-top: 5px;"> <!-- Added an ID for easy identification -->
+        <!-- Username -->
+    </div>  
+
+        <div class="container">
+            <img src="https://img.freepik.com/free-vector/hand-drawn-bee-outline-illustration_23-2149300962.jpg?size=626&ext=jpg">
+              
+    <div class=" welcmeContainr">
+        <p style="color: yellow; font-size: 20px;">SONG OF THE WEEK</p>
+        <audio controls>
+            <source  title= 'hey 18 years old;'src ="hey 18 years old.mp3">
+        </audio>  
+          
+        <div class="h2"><h2>MUSIC UPloads</h2>
+            <form id="myform" method="post" action="/upload" enctype="multipart/form-data">
+                <input type="file" name="file" accept=".mp3,.ogg,.wav">
+                <input type="submit" value="upload">
+            </form>  
+        </div>  
+    </div>
+        
+    <div class="audio-container">
+        <p style="color: yellow; Top:20; left: 20%">Playlist</p>
+        <div style="color: orange;" id="uploaded"> 
+
+            <!--  upoaded content here -->
+            </div>   
+        </div>
+    <div class ="options"> 
+        <p style="color: yellow; margin-top: 15%;"><em>ADD TO collextion</em></p> 
+        <h2>Choose Destination</h2>
+        
+        <p style="color: orange;"><em>My Playlist</em></p>  
+            <div id="userNameElement2" style="color: rgb(255, 153, 0); font-size: 24px; text-align: justify; margin-top: 10px;"> 
+            <!-- Username will be dynamically inserted here --></div>
+
+        <nav class="playlist">
+            <a href="hip hop.html">HiP HOP</a> 
+            <a href="Deep.html">Deep</a>
+            <a href="MASKANDI.html">Maskandi</a>
+            <a href="AFROPOP.html"> AFROPOP</a>
+        </nav> 
+ 
+
+    </div>           
+
+    </div>
+    
+    
+        
+    </body>
+        
+
+   
+</html>
